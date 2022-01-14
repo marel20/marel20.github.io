@@ -14,6 +14,9 @@ nav > .row > .navbar:hover{
     background: wheat;
     opacity: 0.5;
 }
+h4{
+    margin: 0 42%;
+}
 .row{
     display: flex; 
     flex-direction: row; 
