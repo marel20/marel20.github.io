@@ -59,5 +59,8 @@ header{
 }
 .contacto{
     margin: 0 41%;
-    font-family: 'Handlee', cursive;
+    font-family: 'Amatic SC', cursive;
+}
+h4{
+    margin: 0 40%;
 }
