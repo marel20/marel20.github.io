@@ -32,7 +32,7 @@ nav > .row > .navbar:hover{
     justify-content: space-around; 
     align-items: center;
 }
-footer > .row > a > img{margin-top: 2vh;}
+footer > .row > a > img{margin-top: 1vh;}
 footer{
     width: 100%;
     min-height: 20vh;
@@ -62,5 +62,5 @@ header{
     font-family: 'Acme', sans-serif;
 }
 h4{
-    margin: 0 42%;
+    margin: 0 40%;
 }
