@@ -64,3 +64,17 @@ header{
 h4{
     margin: 0 40%;
 }
+#proyectos > .container > a > img{width: 480px; height: 360px; margin: 2% 5%;}
+.verMas > a {text-decoration: none; color: black;}
+.verMas > a:hover {background: wheat; opacity: 0.5;}
+.verMas{
+    width: 94%;
+    height: 5vh;
+    background-color: wheat;
+    padding: 1%;
+    margin: 2%;
+    text-align: center;
+    font-family: 'Voltaire', sans-serif;
+    font: bold;
+    font-size: 120%;
+}
