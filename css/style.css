@@ -16,7 +16,7 @@ nav{
     width: 100%;
     height: 10vh;
     background-color: wheat;
-    margin: 0 0 3% 0;
+    margin-bottom: 3%;
     padding: 0;
     position: fixed;
     top: 0;
@@ -51,22 +51,17 @@ header{
     margin: 3% 30%;
     font-size: 110%;
 }
+#proyectos > h3 {font-family: 'Voltaire', sans-serif; font: bold; font-size: 130%; margin: 2%}
 .container{
     font-family: 'Voltaire', sans-serif;
     font: bold;
     font-size: 120%;
-    margin: 2% 5%;
+    margin: 2%;
 }
-.contacto{
-    margin: 0 41%;
-    font-family: 'Acme', sans-serif;
-}
-h4{
-    margin: 0 40%;
-}
-#proyectos > .container > a > img{width: 480px; height: 360px; margin: 2% 5%;}
+#proyectos > .container > a > img{margin: 2%;}
+/*#proyectos > .container > a > h3:hover {background: wheat; opacity: 0.5;}*/
 .verMas > a {text-decoration: none; color: black;}
-.verMas > a:hover {background: wheat; opacity: 0.5;}
+.verMas > a > h3:hover {background: wheat; opacity: 0.5;}
 .verMas{
     width: 94%;
     height: 5vh;
@@ -77,4 +72,27 @@ h4{
     font-family: 'Voltaire', sans-serif;
     font: bold;
     font-size: 120%;
+}
+.button{
+    width: 15%;
+    background-color: wheat;
+    font-family: 'Voltaire', sans-serif;
+    font: bold;
+    font-size: 120%;
+    text-decoration: none;
+    padding: 1%;
+    margin: 0 6%;
+    text-align: center;
+    display: block;
+    position: inherit;
+}
+.contacto{
+    margin: 0 41%;
+    font-family: 'Acme', sans-serif;
+}
+h4{
+    margin: 0 40%;
+}
+.medio {
+    margin-left: 24%;
 }
