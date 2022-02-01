@@ -42,7 +42,7 @@ footer{
 }
 header{
     font-family: 'Amatic SC', cursive;
-    margin: 2% 30%;
+    margin: 2% 35%;
     font: bold;
     font-size: 270%;
 }
@@ -59,7 +59,9 @@ header{
     margin: 2%;
 }
 #proyectos > .container > a > img{margin: 2%;}
-/*#proyectos > .container > a > h3:hover {background: wheat; opacity: 0.5;}*/
+/*#proyectos{
+    background-color: rgba(157, 218, 218, 0.808);
+} */
 .verMas > a {text-decoration: none; color: black;}
 .verMas > a > h3:hover {background: wheat; opacity: 0.5;}
 .verMas{
