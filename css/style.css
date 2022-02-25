@@ -22,13 +22,21 @@ body{
     background-repeat: no-repeat;
 }
 .navbar{
-    width: 90%;
+    width: 95%;
     margin: auto;
     padding: 1px 1px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: 0 8%;
+  transition: all 0.3s ease-in-out;
+}
+.container.active{
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0);
+}
+.container.active .navbar{
+    padding: 8px 0;
 }
 .container > .row > .logo {margin: 0 30% 0 2%;}
 .container > .row > .navbar > ul > li{
@@ -135,19 +143,37 @@ footer{
     display: block;
     position: inherit;
 }
+.visible{
+    display: block;
+    visibility: visible;
+}
+.oculto{
+    display: none;
+    visibility: hidden;
+}
 .row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-.contacto{
+.tittle{
     margin: 1% 41%;
     font-family: 'Acme', sans-serif;
 }
 h4{
     margin: 0 40%;
 }
-.medio {
-    margin-left: 24%;
+.medio > img {
+    max-width: 550px;
+    max-height: 480px;
+    margin: 1%;
+}
+.arriba{
+    position: fixed;
+    line-height: 64px;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    z-index: 100;
 }
