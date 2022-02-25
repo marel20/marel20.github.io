@@ -10,7 +10,7 @@
 </head>
 <body>
     <!--Start Navbar-->
-    <div class="container">
+    <div id="inicio" class="container">
         <div class="row">
             <div class="logo">
                 <img src="img/DM.png" alt="logo">
@@ -57,17 +57,17 @@
                     <img src="img/truco.png" alt="appsuper">
                 </a>
                 <a href="https://marel20.github.io/Portero-ElectricoJS/" target="_blank">
-                    <img src="img/cambiame.png" alt="portero">
+                    <img src="img/portero.png" alt="portero">
                 </a>
-                <a href="https://marel20.github.io/ListaDeCompras/" target="_blank">
-                    <img src="img/truco.png" alt="lista">
-                </a> 
-                <a href="https://marel20.github.io/FormularioMobile/" target="_blank">
-                    <img src="img/truco.png" alt="lista">
+                <a href="https://marel20.github.io/Calculadora-iOS/" target="_blank">
+                    <img src="img/calculadora.png" alt="calculadora">
                 </a> <br>
                 <a href="https://marel20.github.io/TecnoRickWeb/" target="_blank" class="medio">
                     <img src="img/pagweb.png" alt="pagweb">
-                </a><br>
+                </a>
+                <a href="https://marel20.github.io/ListaDeCompras/" target="_blank" class="medio">
+                    <img src="img/listacompras.png" alt="lista">
+                </a> <br> 
         </div>
         <div class="verMas">
             <a href="https://github.com/marel20?tab=repositories" target="_blank">
@@ -111,31 +111,64 @@
         </div>
     </article>
     <!--End About-->
-
+        <div class="arriba">
+            <a href="#inicio">
+                <img src="img/icons/arribawhite.png" alt="arriba">
+            </a>
+        </div>
         <!--Start Footer Contact-->
 <footer id="contacto">
-    <h3 class="contacto"><u>Contactame y trabajemos juntos</h3></u> <br>
+    <h3 class="tittle"><u>Contáctame y trabajemos juntos</h3></u> <br>
     <div class="row">
-        <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
-            <img src="img/icons/github.png" alt="git">
-        </a>
-        <a href="https://wa.me/5493471416804" role="button" target="_blank">
-            <img src="img/icons/whatsapp.png" alt="wsp">
-        </a>
-        <a href="mailto:marelli_11@hotmail.com" role="button" target="_blank">
-            <img src="img/icons/correo.png" alt="correo">
-        </a>
-        <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
-            <img src="img/icons/linkedin.png" alt="in">
-        </a>
+        <div id="github" class="visible">
+            <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
+                <img src="img/icons/github.png" alt="git">
+            </a>
+        </div>
+        <div id="whatsapp" class="visible">
+            <a href="https://wa.me/5493471416804" role="button" target="_blank">
+                <img src="img/icons/whatsapp.png" alt="wsp">
+            </a>
+        </div>
+        <div id="correo" class="visible">
+            <a href="mailto:marelli_11@hotmail.com" role="button" target="_blank">
+                <img src="img/icons/correo.png" alt="correo">
+            </a>
+        </div>
+        <div id="linkedin" class="visible">
+            <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
+                <img src="img/icons/linkedin.png" alt="in">
+            </a>
+        </div>
+        
+        <div id="git" class="oculto">
+            <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
+                <img src="img/icons/git.png" alt="git">
+            </a>
+        </div>
+        <div id="wsp" class="oculto">
+            <a href="https://wa.me/5493471416804" role="button" target="_blank">
+                <img src="img/icons/wsp.png" alt="wsp">
+            </a>
+        </div>
+        <div id="correoA" class="oculto">
+            <a href="mailto:marelli_11@hotmail.com" role="button" target="_blank">
+                <img src="img/icons/correo-abierto.png" alt="correo">
+            </a>
+        </div>
+        <div id="linked" class="oculto">
+            <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
+                <img src="img/icons/linkedinn.png" alt="in">
+            </a>
+        </div>
     </div>
 </footer>
     <!--End Footer Contact-->
 
 
-    
-    <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
 
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scritpt.js"></script>
+    <script type="text/javascript"></script>
 </body>
 </html>
