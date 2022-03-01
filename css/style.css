@@ -73,7 +73,7 @@ body{
 }
 .container > h3 {
     font-family: 'Handlee', cursive;
-    font-size: 200%;
+    font-size: 250%;
     margin: 9% 3%;
 }
 /*
@@ -114,11 +114,13 @@ footer{
     margin: 2%;
 }
 #proyectos > .containers > a > img{margin: 2%;}
+#proyectos > .containers > .row > a {text-decoration: none; color: black; font: bold;}
+#proyectos > .containers > .row > a > p:hover {background: wheat; opacity: 0.5;}
 /*#proyectos{
     background-color: rgba(157, 218, 218, 0.808);
 } */
 .verMas > a {text-decoration: none; color: black;}
-.verMas > a > h3:hover {background: wheat; opacity: 0.5;}
+.verMas > a > h3:hover {background: wheat; opacity: 0.8;}
 .verMas{
     width: 94%;
     height: 5vh;
@@ -131,14 +133,13 @@ footer{
     font-size: 120%;
 }
 .button{
-    width: 15%;
+    width: 90%;
     background-color: wheat;
     font-family: 'Voltaire', sans-serif;
     font: bold;
-    font-size: 120%;
-    text-decoration: none;
+    font-size: 110%;
     padding: 1%;
-    margin: 0 6%;
+    margin: 1% 4%;
     text-align: center;
     display: block;
     position: inherit;
@@ -158,7 +159,7 @@ footer{
     align-items: center;
 }
 .tittle{
-    margin: 1% 41%;
+    margin: 1%  41%;
     font-family: 'Acme', sans-serif;
 }
 h4{
