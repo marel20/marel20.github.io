@@ -76,6 +76,62 @@ body{
     font-size: 250%;
     margin: 9% 3%;
 }
+.container > h5 {
+    font-family: 'Voltaire', sans-serif;
+    font-size: 150%;
+    margin: -4% 3%;
+}
+
+.skills{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    max-width: 1295px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.slider > .item-slide > img {max-width: 62%; max-height: 62%;}
+.slider{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 750ms;
+    animation-name: autoplay;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+@keyframes autoplay{
+    20%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    40%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    60%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+    80%{
+        transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 4), 0, 0);
+    }
+
+} 
+
 /*
 nav > .row > a{text-decoration: none; color: rgb(0, 0, 0); font-size: 150%;  padding: 1%; font-family: 'Itim', cursive;}
 nav{
