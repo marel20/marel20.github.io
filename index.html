@@ -3,242 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="icon" href="assets/img/DM.jpg" type="logo"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="img/DM.png" type="logo"/>
-    <title>Daniel Marelli</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <title>Daniel Marelli - Portfolio</title>
 </head>
 <body>
-    <!--Start Navbar-->
-    <div id="inicio" class="container">
-        <div class="row">
-            <div class="logo">
-                <img src="img/DM.png" alt="logo">
+    <header>
+        <!-- Start Navbar -->
+        <nav id="home" class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid nav">
+              <img src="assets/img/DM.png" alt="logo-DM">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link text-black" aria-current="page" href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#about">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#projects">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#contact">Contacto</a>
+                </li>
+              </ul>
             </div>
-
-            <div class="navbar">
-                
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#acerca">Acerca de mí</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-
-                
+          </div>
+        </nav>
+        <!-- End Navbar -->
+      
+        <!-- Background image -->
+        <div id="intro-example" class="img p-5 text-center bg-image">
+          <div class="mask" style="background-color: rgba(51, 50, 50, 0.226);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white">
+                <h1 class="mb-3">Daniel Marelli - Portfolio</h1>
+                <h5 class="mb-4">Desarrollador Trainee/Jr Web/Mobile</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background image -->
+      </header>
+      <div class="container-fluid body">
+        <!----- StartCarousel Skills----->
+          <u><h2 class="skills">Mis Skills</h2></u>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/html5.png" class="d-block w-100" alt="Wild Landscape"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/css.png" class="d-block w-100" alt="Camera"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/js.png" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/jquery.png" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/github.png" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/firebase.png" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/bootstrap.png" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/fm7.png" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/apachecordova.png" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
             </div>
         </div>
 
-        <h1>DANIEL MARELLI</h1>
-        <h3>Desarrollador Trainee <br> Web/Mobile. 
+        <!-----End Carousel Skills----->
 
-    </div> <br><br><br>
-    <!--End Navbar-->
-
-
-    <h4>Actualmente creando mi portfolio</h4> <br>
-
-    <!-------Start Slider Skills------>
-    <div class="skills"> <br><br>
-        
-        <div class="slider">
-            <div class="item-slide">
-                <img src="img/html5.png" alt="html5">
-            </div>
-            <div class="item-slide">
-                <img src="img/css.png" alt="css">
-            </div>
-            <div class="item-slide">
-                <img src="img/js.png" alt="js">
-            </div>
-            <div class="item-slide">
-                <img src="img/jquery.png" alt="jquery">
-            </div>
-            <div class="item-slide">
-                <img src="img/fm7.png" alt="fm7">
-            </div>
-            <div class="item-slide">
-                <img src="img/firebase.png" alt="firebase">
-            </div>
-            <div class="item-slide">
-                <img src="img/bootstrap.png" alt="bootstrap">
-            </div>
-            <div class="item-slide">
-                <img src="img/apachecordova.png" alt="apachecordova">
-            </div>
-            <div class="item-slide">
-                <img src="img/github.png" alt="github">
-            </div>
-        </div>
-
-    </div>
-    <!----------End Slider Skills--------->
-
-        <!--Start About-->
-        <article id="acerca"> <br><br><br>
+        <!-----Start About----->
+        <article id="about">
             <div class="containers">
-                <h3><u>Acerca de mí</u></h3><br><br>
+                <h3><u>Acerca de mí</u></h3>
                 <div>
                     <p>Profesional entusiasta de 29 años, responsable, alegre y respetuoso. 
                         Hace 10 años que trabajo en una distribuidora mayorista de alimentos en mi pueblo.
-                    </p> <br>
+                    </p>
                     <p>En el medio de esos años, hice el curso de electricista (Instituto Rivadavia de Rosario - 2016)
                         y después de ese curso con un amigo empezamos un micro emprendimiento de seguridad 
                         (instalamos y vendemos cámaras de seguridad y alarmas) realizandolo en nuestros ratos libres. 
-                    </p> <br>
+                    </p>
                     <p>Al empezar el 2021, comencé a pensar en que necesitaba nuevos desafíos, nuevos retos, 
                         que en el puesto que estaba en mi actual trabajo, no iba a tener mucho crecimiento personal y laboral, 
                         así que ahí fue cuando decidí inscribirme en los cursos de Comunidad IT, para cambiar 
                         mi rumbo (siempre me intereso un poco la programación y con esto llegue a descubrir que
                         me gusta mas de lo que pensaba). 
-                    </p> <br>
+                    </p>
                     <p>Fue en Junio de 2021 cuando realicé el curso de introducción a la programación de 1 mes, recibiendo el título de Desarrollador Web
                         y luego a mediados
                         de Agosto comenzamos el siguiente curso, ya mucho más intensivo de 3 meses, creando mi app como proyecto final, y conseguir 
                         el título de Desarrollador Mobile. Ambos cursos fueron realizados, saliendo como egresado de Comunidad IT.
-                    </p> <br>
+                    </p>
                     <p>Actualmente estoy buscando mi primer empleo IT, el cual me permita seguir creciendo, aprendiendo y desarrollandome 
                         en este lindo mundo. 
-                    </p> <br>
+                    </p>
                     <p>Soy un desarrollador trainee ya que no cuento con experiencia aún, pero se que puedo dar muchísimo de mi. 
                         Pensando lo que llegue a hacer en mis ratos libres de trabajo, entre el curso y mi app final, 
                         se que dedicándome de lleno a esto puedo aportar mucho más de mí! 
-                    </p> <br>
+                    </p> 
                 <div>
             </div>
         </article>
-        <!--End About-->
+        <!-----End About----->
 
-    <!--Start Projects-->
-    <article id="proyectos"><br><br><br>
-            <h3><u>Mis Proyectos</u></h3>
-            
-            <div class="containers">
+        <!-----Start Projects----->
+            <article id="proyectos">
+                <h3><u>Mis Proyectos</u></h3>
+
                 <div class="row">
-                    <a href="https://marel20.github.io/Anotador-Truco/" target="_blank">
-                        <img src="img/truco.png" alt="truco">
-                        <p class="button">
-                            Anotador Truco
-                        </p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="assets/img/compu.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Mantenimiento enlaces punto a punto</h5>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-4 col-md-6 mb-2">
+                      <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="assets/img/tablero.JPG" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Mantenimiento sistema inalámbrico Ubiquiti</h5>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-4 col-md-6 mb-2">
+                      <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="assets/img/teclado.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Instalaciones de alarmas</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="assets/img/compu.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Mantenimiento enlaces punto a punto</h5>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="assets/img/tablero.JPG" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Mantenimiento sistema inalámbrico Ubiquiti</h5>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="assets/img/portero.png" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Instalaciones de alarmas</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                <div class="verMas">
+                    <a href="https://github.com/marel20?tab=repositories" target="_blank">
+                    <h3>Ver mas proyectos ></h3>
                     </a>
-                
-                
-                    <a href="https://marel20.github.io/CambiameDeColor/" target="_blank">
-                        <img src="img/cambiame.png" alt="cambiame">
-                        <p class="button">
-                            Cambiame de Color
-                        </p>
-                    </a>
-                
-                
-                    <a href="https://marel20.github.io/AppSupermercados/" target="_blank">
-                        <img src="img/appsuper.png" alt="appsuper">
-                        <p class="button">
-                            Supermercado Supersol
-                        </p>
-                    </a>
-                </div> <br>
-                <div class="row">
-                    <a href="https://marel20.github.io/Portero-ElectricoJS/" target="_blank">
-                        <img src="img/portero.png" alt="portero">
-                        <p class="button">
-                            Portero Eléctrico
-                        </p>
-                    </a>
-                
-                
-                    <a href="https://marel20.github.io/Calculadora-iOS/" target="_blank">
-                        <img src="img/calculadora.png" alt="calculadora">
-                        <p class="button">
-                            Calculadora iOS
-                        </p>
-                    </a>
-                </div> <br>
-                <div class="row">
-                    <a href="https://marel20.github.io/TecnoRickWeb/" target="_blank" class="medio">
-                        <img src="img/pagweb.png" alt="pagweb">
-                        <p class="button">
-                            Tecno Rick Web
-                        </p>
-                    </a>
-                
-                
-                    <a href="https://marel20.github.io/ListaDeCompras/" target="_blank" class="medio">
-                        <img src="img/listacompras.png" alt="lista">
-                        <p class="button">
-                            Lista de Compras
-                        </p>
-                    </a>
-                </div> <br>
-        </div>
-        <div class="verMas">
-            <a href="https://github.com/marel20?tab=repositories" target="_blank">
-                <h3>Ver mas proyectos ></h3>
-            </a>
-        </div>
-    </article> <br><br><br><br><br>
-    <!--End Projects-->
-    
+                </div>
+            </article>
+        <!-----End Projects----->
+
         <div class="arriba">
-            <a href="#inicio">
-                <img src="img/icons/arribawhite.png" alt="arriba">
-            </a>
-        </div>
-        <!--Start Footer Contact-->
-<footer id="contacto">
-    <h3 class="tittle"><u>Contáctame y trabajemos juntos</h3></u> <br>
-    <div class="row">
-        <div id="github" class="visible">
-            <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
-                <img src="img/icons/github.png" alt="git">
-            </a>
-        </div>
-        <div id="git" class="oculto">
-            <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
-                <img src="img/icons/git.png" alt="git">
+            <a href="#home">
+                <img src="assets/icons/arribawhite.png" alt="arriba">
             </a>
         </div>
 
-        <div id="whatsapp" class="visible">
-            <a href="https://wa.me/5493471416804" role="button" target="_blank">
-                <img src="img/icons/whatsapp.png" alt="wsp">
-            </a>
-        </div>
-        <div id="wsp" class="oculto">
-            <a href="https://wa.me/5493471416804" role="button" target="_blank">
-                <img src="img/icons/wsp.png" alt="wsp">
-            </a>
-        </div>
+        <!-----Start Footer----->
 
-        <div id="correo" class="visible">
-            <a href="mailto:marelli_11@hotmail.com" role="button" target="_blank">
-                <img src="img/icons/correo.png" alt="correo">
-            </a>
-        </div>
-        <div id="correoA" class="oculto">
-            <a href="mailto:marelli_11@hotmail.com" role="button" target="_blank">
-                <img src="img/icons/correo-abierto.png" alt="correo">
-            </a>
-        </div>
+        <footer id="contact" class="footer" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="socialMedia">
+              <!-- Section: Social media -->
+                <!-- Github -->
+                <div id="github" class="visible">
+                    <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
+                        <img src="assets/icons/github.png" alt="git">
+                    </a>
+                </div>
+                <div id="git" class="oculto">
+                    <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
+                        <img src="assets/icons/git.png" alt="git">
+                    </a>
+                </div>
+                
+          
+                <!-- WhatsApp -->
+                <div id="whatsapp" class="visible">
+                    <a href="https://wa.me/5493471416804" role="button" target="_blank">
+                        <img src="assets/icons/whatsapp.png" alt="wsp">
+                    </a>
+                </div>
+                <div id="wsp" class="oculto">
+                    <a href="https://wa.me/5493471416804" role="button" target="_blank">
+                        <img src="assets/icons/wsp.png" alt="wsp">
+                    </a>
+                </div>
+          
+                <!-- Correo -->
+                <div id="correo" class="visible">
+                    <a href="mailto:marelli_11@hotmail.com" role="button" target="_blank">
+                        <img src="assets/icons/correo.png" alt="correo">
+                    </a>
+                </div>
+                <div id="correoA" class="oculto">
+                    <a href="mailto:marelli_11@hotmail.com" role="button" target="_blank">
+                        <img src="assets/icons/correo-abierto.png" alt="correo">
+                    </a>
+                </div>
+          
+                <!-- Linkedin -->
+                <div id="linkedin" class="visible">
+                    <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
+                        <img src="assets/icons/linkedin.png" alt="in">
+                    </a>
+                </div>
+                <div id="linked" class="oculto">
+                    <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
+                        <img src="assets/icons/linkedinn.png" alt="in">
+                    </a>
+                </div>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <a class="text-dark" href="https://marel20.github.io/">Daniel Marelli</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
 
-        <div id="linkedin" class="visible">
-            <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
-                <img src="img/icons/linkedin.png" alt="in">
-            </a>
-        </div>
-        <div id="linked" class="oculto">
-            <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
-                <img src="img/icons/linkedinn.png" alt="in">
-            </a>
-        </div>
+        <!-----End Footer----->
     </div>
-</footer>
-    <!--End Footer Contact-->
+
+
+
 
 
 
     <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/scritpt.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
     <script type="text/javascript"></script>
 </body>
 </html>
