@@ -21,16 +21,30 @@ font-family: 'Voltaire', sans-serif;
 /* Height for devices larger than 992px */
 @media (min-width: 992px) {
   #intro-example {
-    height: 600px;
+    height: 700px;
   }
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+    .slideSkill{
+        display: none; 
+    }
+  }
+
+        /*-- 768px --*/
+@media (min-width: 768px) and (max-width: 1900px) {
+    .slideHidden{
+        display: none;
+    }
+
 }
 .nav > img{
     margin:0 50% 0 10%;
     width: 8%;
     height: 8%;
 }
-.navbar{
-    background-color: rgba(0, 0, 0, 0.2);
+nav{
+    background-color: rgb(197, 197, 197);
 }
 .img{
     background-image: url('../assets/img/fotoo.jpg');
@@ -47,72 +61,75 @@ nav > .collapse > ul > li::before{
     bottom: 0px;
     transition: 0.4s ease-out;
 }
+.d-flex{
+    margin: 0 5%;
+}
+
+.d-flex > .text-white > h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.d-flex > .text-white > h5{
+    font-family: 'Handlee', cursive;
+    color: rgb(0, 0, 0);
+}
 
 /*------Navbar------*/
 
 /*------Carousel-------*/
-.carousel{
-    max-width: 40%;
-    height: auto;
-    margin: 3%  auto;
+.carouselSkill{
+    margin: 2% auto;
+    padding: 3%;
+}
+.carouselSkill > .slideSkill{padding: 1%;}
+
+.slideHidden{
+    margin: 2% auto;
+    padding: 10%;
 }
 /*------Carousel-------*/
 
-/*------Proyects------*/
-#proyectos > h3 {font-family: 'Voltaire', sans-serif; font: bold; font-size: 130%; margin: 2%}
-.containers{
+/*------Projects------*/
+#projects > h3{
+    margin: 2% auto;
+    color: rgb(0, 0, 0);
     font-family: 'Voltaire', sans-serif;
-    font: bold;
-    font-size: 120%;
-    margin: 2%;
+    font-weight: bold;
 }
-#proyectos > .containers > a > img{margin: 2%;}
-#proyectos > .containers > .row > a {text-decoration: none; color: black; font: bold;}
-#proyectos > .containers > .row > a > p:hover {background: wheat; opacity: 0.5;}
-/*#proyectos{
-    background-color: rgba(157, 218, 218, 0.808);
-} */
+#projects{
+    margin: 1% auto;
+    padding: 2%;
+}
 .verMas > a {text-decoration: none; color: black;}
-.verMas > a > h3:hover {background: wheat; opacity: 0.8;}
+.verMas > a > h3:hover {color: rgb(116, 114, 111); opacity: 0.8;}
 .verMas{
-    width: 94%;
-    height: 5vh;
-    background-color: wheat;
     padding: 1%;
-    margin: 2%;
     text-align: center;
     font-family: 'Voltaire', sans-serif;
     font: bold;
-    font-size: 120%;
 }
-.button{
-    width: 90%;
-    background-color: wheat;
+.card-title{
     font-family: 'Voltaire', sans-serif;
-    font: bold;
-    font-size: 110%;
-    padding: 1%;
-    margin: 1% 4%;
-    text-align: center;
-    display: block;
-    position: inherit;
-}
-.projectRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.tittle{
-    margin: 1%  41%;
-    font-family: 'Acme', sans-serif;
-}
-.medio > img {
-    max-width: 550px;
-    max-height: 480px;
-    margin: 1%;
-}
 
+}
+/*-----Projects-----*/
+/*-----About-----*/
+.containers{
+    margin: 2% auto;
+    padding: 2%;
+    text-align: justify;
+    font-family: 'Acme', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 110%;    
+}
+.containers > h3{
+    font-family: 'Voltaire', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 3% auto;
+}
+/*-----About-----*/
 .visible{
     display: block;
     visibility: visible;
@@ -124,15 +141,23 @@ nav > .collapse > ul > li::before{
 .arriba{
     position: fixed;
     line-height: 64px;
-    bottom: 30px;
-    right: 30px;
+    bottom: 130px;
+    right: 25px;
     text-align: center;
     z-index: 100;
 }
+/*-----Footer-----*/
 .socialMedia{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 1%;
+}
+#contact > h5{
+    font-family: 'Voltaire', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    margin: 1% 1%;
 }
