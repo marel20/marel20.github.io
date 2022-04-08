@@ -29,11 +29,24 @@ font-family: 'Voltaire', sans-serif;
     .slideSkill{
         display: none; 
     }
+    .d-flex > .text-white > h1 {
+        display: none;
+    }
+    .d-flex > .text-white > h5{
+        display: none;
+    }
+    .arriba > a > img{
+        width: 32px;
+        height: auto;
+    }
   }
 
         /*-- 768px --*/
 @media (min-width: 768px) and (max-width: 1900px) {
     .slideHidden{
+        display: none;
+    }
+    .textMobile{
         display: none;
     }
 
@@ -51,10 +64,10 @@ nav{
 }
 .nav-link{font-family: 'Itim', cursive;}
 .nav-item > .nav-link:hover{color: white;}
-nav > .collapse > ul > li::before{
+.nav > ul > li::before{
     content: "";
     height: 3px;
-    width: 0%;
+    width: 100%;
     background: rgb(0, 0, 0);
     position: absolute;
     left: 0;
@@ -71,6 +84,19 @@ nav > .collapse > ul > li::before{
     color: rgb(0, 0, 0);
 }
 .d-flex > .text-white > h5{
+    font-family: 'Handlee', cursive;
+    color: rgb(0, 0, 0);
+}
+
+.textMobile{
+    margin: 5% auto;
+}
+.textMobile > h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.textMobile > h5{
     font-family: 'Handlee', cursive;
     color: rgb(0, 0, 0);
 }
@@ -141,8 +167,8 @@ nav > .collapse > ul > li::before{
 .arriba{
     position: fixed;
     line-height: 64px;
-    bottom: 130px;
-    right: 25px;
+    bottom: 125px;
+    right: 15px;
     text-align: center;
     z-index: 100;
 }
