@@ -9,7 +9,7 @@ font-family: 'Voltaire', sans-serif;
 */
 * { margin: 0; padding: 0;}
 
-.body{
+html > body{
     background-color: wheat;
 }
 
@@ -39,6 +39,38 @@ font-family: 'Voltaire', sans-serif;
         width: 32px;
         height: auto;
     }
+    .footer > .socialMedia > #github > a > img{
+        width: 50px;
+        height: auto;
+    }
+    .footer > .socialMedia > #git > a > img{
+        width: 50px;
+        height: auto;
+    }
+    .footer > .socialMedia > #whatsapp > a > img{
+        width: 50px;
+        height: auto;
+    }
+    .footer > .socialMedia > #wsp > a > img{
+        width: 50px;
+        height: auto;
+    }
+    .footer > .socialMedia > #correo > a > img{
+        width: 50px;
+        height: auto;
+    }
+    .footer > .socialMedia > #correoA > a > img{
+        width: 50px;
+        height: auto;
+    }
+    .footer > .socialMedia > #linkedin > a > img{
+        width: 50px;
+        height: auto;
+    }
+    .footer > .socialMedia > #linked > a > img{
+        width: 50px;
+        height: auto;
+    }
   }
 
         /*-- 768px --*/
@@ -57,23 +89,14 @@ font-family: 'Voltaire', sans-serif;
     height: 8%;
 }
 nav{
-    background-color: rgb(197, 197, 197);
+    box-shadow: none !important;
 }
 .img{
     background-image: url('../assets/img/fotoo.jpg');
 }
-.nav-link{font-family: 'Itim', cursive;}
-.nav-item > .nav-link:hover{color: white;}
-.nav > ul > li::before{
-    content: "";
-    height: 3px;
-    width: 100%;
-    background: rgb(0, 0, 0);
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    transition: 0.4s ease-out;
-}
+.collapse > ul > li > a{font-family: 'Itim', cursive;}
+.collapse > ul > li > a:hover{color: white;}
+
 .d-flex{
     margin: 0 5%;
 }
