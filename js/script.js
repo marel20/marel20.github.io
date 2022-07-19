@@ -92,3 +92,12 @@ function fnmenuHamburguerOn(){
 }
 /*----------End sidenav---------*/
 
+let btnUp = window.pageYOffset;
+window.onscroll = function() {
+    let displace = window.pageYOffset;
+    if (btnUp < displace){
+        this.document.getElementById('up').style.display = 'block';
+    } else{
+        document.getElementById('up').style.display = 'none';
+    }
+}
