@@ -31,8 +31,11 @@ html > body{
     }
     #sidenav {
         display: block;
-        max-width: 96%;
+        max-width: 100%;
         position: fixed;
+    }
+    #sidenav .imgSidenav img{
+      width: 20%;
     }
     .slideSkill{
         display: none; 
@@ -109,12 +112,12 @@ html > body{
 }
 nav {
     position: fixed;
-    box-shadow: wheat;
     top: 0;
     left: 0;
     right: 0;
     transition: all 0.3s ease-in-out;
     z-index: 1000;
+    padding: 5px;
   }
   nav .navbar {
     display: flex;
@@ -124,14 +127,14 @@ nav {
     transition: all 0.3s ease-in-out;
   }
   nav.active{
-    background-color: rgba(179, 179, 179, 0.671);
-    box-shadow: 0 2px 10px rgba(131, 131, 131, 0.671);
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   }
   nav.active .navbar{
     padding: 6px 0;
   }
-  nav.active > .navbar > ul > li > a {color: white; font: bold;}
-  nav.active > .navbar > ul > li::before {background: white; font: bold;}
+  nav.active > .navbar > ul > li > a {color: #ffffff; font: bold;}
+  nav.active > .navbar > ul > li::before {background: #000000; font: bold;}
   nav.active > .navbar > ul > li > a:hover {color: rgba(255, 255, 255, 0.623); font: bold;}
   nav > .navbar > button{
     border-radius: 7%;
@@ -157,7 +160,7 @@ nav {
   }
   .navbar > ul > li > a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2rem;
   }
@@ -165,7 +168,7 @@ nav {
     content: "";
     height: 3px;
     width: 0%;
-    background: rgba(255, 255, 255, 0.774);
+    background:black;
     position: absolute;
     left: 0;
     bottom: -12px;
@@ -182,6 +185,7 @@ nav {
   .sidenav{
       box-shadow: 0 0.1875em 0.375em rgba(39, 24, 119, 0.671);
       z-index: 1000;
+      width: 100%;
   }
   .sidenav > .imgSidenav > img {width: 30%; height: auto;}
   .sidenav > .imgSidenav > button {color: #ffffff;}
@@ -196,7 +200,7 @@ nav {
       min-height: 99vh;
       width: 60%;
       top: 0;
-      background-color: rgba(136, 136, 136, 0.966);
+      background-color: rgba(0, 0, 0, 0.2);
       font-family: 'Montserrat', sans-serif;
       font-weight: normal;
       color: #ffffff;

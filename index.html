@@ -24,7 +24,7 @@
         <!--Start Navbar-->
         <nav>
           <div class="navbar">
-              <a href="#inicio"><img class="logo" src="assets/img/DM.png" alt=""></a>
+              <a href="#home"><img class="logo" src="assets/img/DM.png" alt=""></a>
 
               <ul>
                   <li><a href="#home">Inicio</a></li>
@@ -49,8 +49,8 @@
                   loading="lazy"
               />
               <button
-              id="btnHamburguer"
-              class="btnVisible navbar-toggler"
+              id="btnHamburguerOff"
+              class="visible navbar-toggler"
               type="button"
               data-mdb-toggle="collapse"
               data-mdb-target="#collapseWidthExample"
@@ -62,8 +62,8 @@
           </div>
           <div class="side-nav collapse collapse-horizontal" id="collapseWidthExample" >
               <button
-              id="btnHamburguer"
-              class="btnVisible navbar-toggler"
+              id="btnHamburguerOn"
+              class="visible navbar-toggler"
               type="button"
               data-mdb-toggle="collapse"
               data-mdb-target="#collapseWidthExample"
@@ -74,21 +74,23 @@
               </button>
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 sidenav-menu">
                   <li class="nav-li nav-item">
-                      <a class="nav-link active" href="#home">INICIO</a>
+                      <a class="nav-link active" id="button-hiden1" href="#home" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">INICIO</a>
                   </li>
                   <li class="nav-li nav-item">
-                      <a class="nav-link active" href="#about">SOBRE MÍ</a>
+                      <a class="nav-link active" id="button-hiden2" href="#about" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">SOBRE MÍ</a>
                   </li>
                   <li class="nav-li nav-item">
-                      <a class="nav-link active" href="#projects">PROYECTOS</a>
+                      <a class="nav-link active" id="button-hiden3" href="#projects" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">PROYECTOS</a>
                   </li>
                   <li class="nav-li nav-item">
-                      <a class="nav-link active" href="#contact">CONTACTO</a>
+                      <a class="nav-link active" id="button-hiden4" href="#contact" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">CONTACTO</a>
                   </li>
               </ul>
           </div>
       </div>
       <!--End Sidenav-->
+
+      <div id="home"></div>
         
         <!-- Background image -->
         <div id="intro-example" class="img p-5 text-center bg-image">
@@ -226,27 +228,7 @@
             </div>
         </div>
 
-        <div class="wrapper-grey padded">
-          <div class="container">
-            <h2 class="text-center">Your next trip</h2>
-            <div class="col-xs-12 col-sm-4">
-                <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://i1.wp.com/handluggageonly.co.uk/wp-content/uploads/2015/05/IMG_2813-s.jpg?w=1600&ssl=1');">
-                  <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-4">
-                <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2016/04/IMG_5589.jpg?w=1600&ssl=1');">
-                  <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-4">
-                <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2016/03/Positano-Weather.jpg?w=1600&ssl=1');">
-                  <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         <!-----End Carousel Hidden----->
 
@@ -254,49 +236,50 @@
             <article id="projects">
                 <h3><u>Mis Proyectos</u></h3>
 
+                <div class="col-lg-12 col-md-12 mb-4 col-12 text-center text-black">
+                  <div>
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="assets/img/tecnoRick.png" class="img-fluid" />
+                      <a href="https://marel20.github.io/WebTecnoRick/" target="_blank">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Proyecto Tecno Rick Web</h5>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 mb-4 text-center text-black">
-                      <div>
-                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                          <img src="assets/img/appsuper.png" class="img-fluid" />
-                          <a href="https://marel20.github.io/SupermercadoApp/" target="_blank">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                          </a>
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">App Supermercados</h5>
-                        </div>
+                  <div class="col-lg-6 col-md-6 mb-4 col-12 text-center text-black">
+                    <div>
+                      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="assets/img/appsuper.png" class="img-fluid" />
+                        <a href="https://marel20.github.io/SupermercadoApp/" target="_blank">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
                       </div>
-                    </div>
-          
-                    <div class="col-lg-6 col-md-6 mb-2 text-center text-black">
-                      <div>
-                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                          <img src="assets/img/truco.png" class="img-fluid" />
-                          <a href="https://marel20.github.io/Anotador-Truco/" target="_blank">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                          </a>
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">App Anotador de Truco</h5>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">App Supermercados</h5>
                       </div>
-                    </div>
-          
-                    <div class="col-lg-12 col-md-12 mb-4 text-center text-black">
-                      <div>
-                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                          <img src="assets/img/tecnoRick.png" class="img-fluid" />
-                          <a href="https://marel20.github.io/WebTecnoRick/" target="_blank">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                          </a>
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Proyecto Tecno Rick Web</h5>
-                        </div>
-                      </div> 
                     </div>
                   </div>
+        
+                  <div class="col-lg-6 col-md-6 mb-4 text-center text-black">
+                    <div>
+                      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="assets/img/truco.png" class="img-fluid" />
+                        <a href="https://marel20.github.io/Anotador-Truco/" target="_blank">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">App Anotador de Truco</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                   <div class="col-lg-12 col-md-12 mb-4 text-center text-black">
                     <div>

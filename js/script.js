@@ -42,3 +42,53 @@ function fnCambiaBtn8(){
 }
 
 
+const nav = document.querySelector('nav')
+window.addEventListener('scroll', fixNav)
+
+function fixNav() {
+if(window.scrollY > nav.offsetHeight + 150) {
+    nav.classList.add('active')
+} else {
+    nav.classList.remove('active')
+}
+}
+
+/*------Start sidenav----------*/
+    
+$("#button-hiden1").on("click",fncerrarsidenav1);
+$("#button-hiden2").on("click",fncerrarsidenav2);
+$("#button-hiden3").on("click",fncerrarsidenav3);
+$("#button-hiden4").on("click",fncerrarsidenav4);
+$("#btnHamburguerOff").on("click", fnmenuHamburguerOff);
+$("#btnHamburguerOn").on("click", fnmenuHamburguerOn);
+
+function fncerrarsidenav1(){
+    $(location).attr('href','#home')
+    $('#btnHamburguerOff').removeClass('oculto').addClass('visible');
+    //console.log("1");
+}
+function fncerrarsidenav2(){
+    $(location).attr('href','#about')
+    $('#btnHamburguerOff').removeClass('oculto').addClass('visible');
+    //console.log("2");
+}
+function fncerrarsidenav3(){
+    $(location).attr('href','#projects')
+    $('#btnHamburguerOff').removeClass('oculto').addClass('visible');
+    //console.log("3");
+}
+function fncerrarsidenav4(){
+    $(location).attr('href','#contact')
+    $('#btnHamburguerOff').removeClass('oculto').addClass('visible');
+    //console.log("4");
+}
+
+function fnmenuHamburguerOff(){
+    $('#btnHamburguerOff').removeClass('visible').addClass('oculto');
+}
+
+function fnmenuHamburguerOn(){
+    $('#btnHamburguerOff').removeClass('oculto').addClass('visible');
+}
+/*----------End sidenav---------*/
+
