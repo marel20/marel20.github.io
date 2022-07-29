@@ -26,6 +26,14 @@ html > body{
 }
 
 @media (min-width: 1px) and (max-width: 987px) {
+    .visible{
+      display: none;
+      visibility: hidden;
+    }
+    .oculto{
+      display: block;
+      visibility: visible;
+    }
     header > nav > .navbar {
         display: none;
     }
