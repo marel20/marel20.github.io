@@ -29,6 +29,7 @@
               <ul>
                   <li><a href="#home">Inicio</a></li>
                   <li><a href="#about">Sobre Mí</a></li>
+                  <li><a href="#skills">Skills</a></li>
                   <li><a href="#projects">Proyectos</a></li>
                   <li><a href="#contact">Contacto</a></li>
               </ul>
@@ -72,13 +73,16 @@
               >
               <i class="fas fa-bars"></i>
               </button>
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 sidenav-menu">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 sidenav-menu text-center">
                   <li class="nav-li nav-item">
                       <a class="nav-link active" id="button-hiden1" href="#home" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">INICIO</a>
                   </li>
                   <li class="nav-li nav-item">
                       <a class="nav-link active" id="button-hiden2" href="#about" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">SOBRE MÍ</a>
                   </li>
+                  <li class="nav-li nav-item">
+                    <a class="nav-link active" id="button-hiden5" href="#skills" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">SKILLS</a>
+                </li>
                   <li class="nav-li nav-item">
                       <a class="nav-link active" id="button-hiden3" href="#projects" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">PROYECTOS</a>
                   </li>
@@ -92,7 +96,7 @@
 
       <div id="home"></div>
         
-        <!-- Background image -->
+      <!-- Background image -->
         <div id="intro-example" class="img p-5 text-center bg-image">
           <div class="mask" style="background-color: rgba(51, 50, 50, 0.226);">
             <div class="d-flex justify-content-left align-items-center h-100">
@@ -103,21 +107,21 @@
             </div>
           </div>
         </div>
-        <!-- Background image -->
+      <!-- Background image -->
       </header>
       
-      <div class="container-fluid">
+      <section class="container-fluid">
         <div class="textMobile text-center">
           <h1 class="mb-3">Daniel Marelli - Portfolio</h1>
           <h5 class="mb-4">Web/Mobile FrontEnd Developer Trainee/Jr</h5>
         </div>
 
 
-        <!-----Start About----->
+      <!-----Start About----->
         <article id="about">
           <div class="containers">
               <h3><u>Acerca de mí</u></h3>
-              <div class="text-black">
+              <div class="containersText text-black">
                   <p>Profesional entusiasta de 29 años, responsable, alegre y respetuoso. 
                       Hace 10 años que trabajo en una distribuidora mayorista de alimentos en mi pueblo.
                   </p>
@@ -139,100 +143,80 @@
                   <p>Actualmente estoy buscando mi primer empleo IT, el cual me permita seguir creciendo, aprendiendo y desarrollandome 
                       en este lindo mundo. 
                   </p>
-                  <p>Soy un desarrollador trainee ya que no cuento con experiencia aún, pero se que puedo dar muchísimo de mi. 
+                  <p>
+                    En estos momentos, estoy cursando el bootcamp frontend en Nucba, para seguir reforzando mis conocimientos sobre JavaScript e incorporar React JS a mis habilidades. Mientras busco esa oportunidad que me de el primer empleo IT, con un colega amigo estamos haciendo páginas web para distintas empresas de nuestro pueblo que nos contratan. 
+                  </p>
+                  <p>Soy un desarrollador trainee/jr ya que no cuento con experiencia aún en una empresa, pero se que puedo dar muchísimo de mi. 
                       Pensando lo que llegue a hacer en mis ratos libres de trabajo, entre el curso y mi app final, 
                       se que dedicándome de lleno a esto puedo aportar mucho más de mí! 
                   </p> 
               <div>
           </div>
         </article>
-              <!-----End About----->
-
-
-        <!----- Start Carousel Skills----->
-
-        <div class="row carouselSkill">
-          <div class="slideSkill col-lg-6 col-md-6 mb-2">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/html5.png" class="d-block w-100" alt="Wild Landscape"/>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/css.png" class="d-block w-100" alt="Camera"/>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/js.png" class="d-block w-100" alt="Exotic Fruits"/>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/jquery.png" class="d-block w-100" alt="Exotic Fruits"/>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/github.png" class="d-block w-100" alt="Exotic Fruits"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slideSkill col-lg-6 col-md-6 mb-2">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/firebase.png" class="d-block w-100" alt="Exotic Fruits"/>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/bootstrap.png" class="d-block w-100" alt="Exotic Fruits"/>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/fm7.png" class="d-block w-100" alt="Exotic Fruits"/>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/apachecordova.png" class="d-block w-100" alt="Exotic Fruits"/>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         
-        <!-----End Carousel Skills----->
+      <!-----End About----->
 
-        <!----- Start Carousel Hidden----->
-        <div id="carouselExampleSlidesOnly" class="slideHidden carousel slide" data-mdb-ride="carousel">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/html5.png" class="d-block w-100" alt="Wild Landscape"/>
+      <!----- Start Skills ----->
+          <section id="skills">
+            <h3><u>Mis Skills</u></h3>
+            <div class="contentCards">
+              <div class="cards col-lg-12 col-md-6 mb-4 col-12">
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/Html.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/css3.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/Js2.png" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="cards col-lg-12 col-md-6 mb-4 col-12">
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/Jquery2.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/Github2.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/bootstrap2.png" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="cards col-lg-12 col-md-6 mb-4 col-12">
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/Firebase2.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/fm7-2.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="card">
+                    <img src="assets/img/cordova.png" alt="">
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/img/css.png" class="d-block w-100" alt="Camera"/>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/js.png" class="d-block w-100" alt="Exotic Fruits"/>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/jquery.png" class="d-block w-100" alt="Exotic Fruits"/>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/github.png" class="d-block w-100" alt="Exotic Fruits"/>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/firebase.png" class="d-block w-100" alt="Exotic Fruits"/>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/bootstrap.png" class="d-block w-100" alt="Exotic Fruits"/>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/fm7.png" class="d-block w-100" alt="Exotic Fruits"/>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/apachecordova.png" class="d-block w-100" alt="Exotic Fruits"/>
-            </div>
-            </div>
-        </div>
+          </section>
 
+      <!----- End Skills ----->
 
-
-        <!-----End Carousel Hidden----->
-
-        <!-----Start Projects----->
+      <!-----Start Projects----->
             <article id="projects">
                 <h3><u>Mis Proyectos</u></h3>
 
@@ -332,7 +316,7 @@
                     </a>
                 </div>
             </article>
-        <!-----End Projects----->
+      <!-----End Projects----->
 
         <div id="up" class="arriba">
             <a href="#home">
@@ -340,7 +324,7 @@
             </a>
         </div>
 
-        <!-----Start Footer----->
+      <!-----Start Footer----->
 
         <footer id="contact" class="footer" style="background-color: #f1f1f1;">
           <h5>Contáctame y trabajemos juntos</h5>
@@ -407,11 +391,8 @@
             <!-- Copyright -->
         </footer>
 
-        <!-----End Footer----->
-    </div>
-
-
-
+      <!-----End Footer----->
+      </section>
 
 
 
