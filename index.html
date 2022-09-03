@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <link rel="icon" href="assets/img/DM.jpg" type="logo"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css" />
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -24,14 +25,14 @@
         <!--Start Navbar-->
         <nav>
           <div class="navbar">
-              <a href="#home"><img class="logo" src="assets/img/DM.png" alt=""></a>
+              <a href="#home" data-aos="zoom-out-down"><img class="logo" src="assets/img/DM.png" alt=""></a>
 
               <ul>
-                  <li><a href="#home">Inicio</a></li>
-                  <li><a href="#about">Sobre Mí</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#projects">Proyectos</a></li>
-                  <li><a href="#contact">Contacto</a></li>
+                  <li data-aos="fade-left"><a href="#home">Inicio</a></li>
+                  <li data-aos="fade-left"><a href="#about">Sobre Mí</a></li>
+                  <li data-aos="zoom-out-down"><a href="#skills">Skills</a></li>
+                  <li data-aos="fade-right"><a href="#projects">Proyectos</a></li>
+                  <li data-aos="fade-right"><a href="#contact">Contacto</a></li>
               </ul>
 
           </div>
@@ -48,6 +49,7 @@
                   src="assets/img/DM.png"
                   alt="Logo_DM"
                   loading="lazy"
+                  data-aos="zoom-out-down"
               />
               <button
               id="btnHamburguerOff"
@@ -57,6 +59,7 @@
               data-mdb-target="#collapseWidthExample"
               aria-expanded="false"
               aria-controls="collapseWidthExample"
+              data-aos="zoom-out-up"
               >
               <i class="fas fa-bars"></i>
               </button>
@@ -97,12 +100,12 @@
       <div id="home"></div>
         
       <!-- Background image -->
-        <div id="intro-example" class="img p-5 text-center bg-image">
+        <div id="intro-example" class="img p-5 text-center bg-image" data-aos="zoom-out-down">
           <div class="mask" style="background-color: rgba(51, 50, 50, 0.226);">
             <div class="d-flex justify-content-left align-items-center h-100">
-              <div class="text-white">
+              <div class="text-white" data-aos="fade-down">
                 <h1 class="mb-3">Daniel Marelli - Portfolio</h1>
-                <h5 class="mb-4">Web/Mobile FrontEnd Developer Trainee/Jr</h5>
+                <h5 class="mb-4">Web/Mobile FrontEnd Developer</h5>
               </div>
             </div>
           </div>
@@ -111,14 +114,19 @@
       </header>
       
       <section class="container-fluid">
-        <div class="textMobile text-center">
+        <div class="textMobile text-center" data-aos="fade-right">
           <h1 class="mb-3">Daniel Marelli - Portfolio</h1>
-          <h5 class="mb-4">Web/Mobile FrontEnd Developer Trainee/Jr</h5>
+          <h5 class="mb-4">Web/Mobile FrontEnd Developer</h5>
         </div>
 
 
       <!-----Start About----->
-        <article id="about">
+        <article id="about" 
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-sine"
+        >
           <div class="containers">
               <h3><u>Acerca de mí</u></h3>
               <div class="containersText text-black">
@@ -157,12 +165,16 @@
       <!-----End About----->
 
       <!----- Start Skills ----->
-          <section id="skills">
+          <section id="skills" 
+          data-aos="fade-down-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          >
             <h3><u>Mis Skills</u></h3>
             <div class="contentCards">
               <div class="cards col-lg-12 col-md-6 mb-4 col-12">
                 <a href="">
-                  <div class="card">
+                  <div id="cards" class="card">
                     <img src="assets/img/Html.png" alt="">
                   </div>
                 </a>
@@ -218,9 +230,17 @@
 
       <!-----Start Projects----->
             <article id="projects">
-                <h3><u>Mis Proyectos</u></h3>
+                <h3
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-sine"
+                ><u>Mis Proyectos</u></h3>
 
-                <div class="col-lg-12 col-md-12 mb-4 col-12 text-center text-black">
+                <div class="col-lg-12 col-md-12 mb-4 col-12 text-center text-black" 
+                data-aos="flip-left"
+                data-aos-duration="3000"
+                >
                   <div>
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                       <img src="assets/img/tecnoRick.png" class="img-fluid" />
@@ -236,7 +256,10 @@
               </div>
 
                 <div class="row">
-                  <div class="col-lg-6 col-md-6 mb-4 col-12 text-center text-black">
+                  <div class="col-lg-6 col-md-6 mb-4 col-12 text-center text-black"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
+                  >
                     <div>
                       <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                         <img src="assets/img/appsuper.png" class="img-fluid" />
@@ -250,7 +273,10 @@
                     </div>
                   </div>
         
-                  <div class="col-lg-6 col-md-6 mb-4 text-center text-black">
+                  <div class="col-lg-6 col-md-6 mb-4 text-center text-black"
+                  data-aos="flip-down"
+                  data-aos-duration="2000"
+                  >
                     <div>
                       <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                         <img src="assets/img/truco.png" class="img-fluid" />
@@ -265,7 +291,10 @@
                   </div>
                 </div>
 
-                  <div class="col-lg-12 col-md-12 mb-4 text-center text-black">
+                  <div class="col-lg-12 col-md-12 mb-4 text-center text-black"
+                  data-aos="flip-right"
+                  data-aos-duration="3000"
+                  >
                     <div>
                       <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                         <img src="assets/img/tcc.png" class="img-fluid" />
@@ -280,7 +309,10 @@
                   </div>
                 </div>
           
-                <div class="col-lg-12 col-md-12 mb-4 text-center text-black">
+                <div class="col-lg-12 col-md-12 mb-4 text-center text-black"
+                data-aos="flip-left"
+                data-aos-duration="3000"
+                >
                       <div>
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                           <img src="assets/img/cautech.png" class="img-fluid" />
@@ -295,22 +327,29 @@
                     </div>
                   </div>
           
-                    <div class="col-lg-12 col-md-12 mb-4 text-center text-black">
+                    <div class="col-lg-12 col-md-12 mb-4 text-center text-black"
+                    data-aos="flip-right"
+                    data-aos-duration="3000"
+                    >
                       <div>
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                          <img src="assets/img/listacompras.png" class="img-fluid" />
-                          <a href="https://marel20.github.io/ListaDeCompras/" target="_blank">
+                          <img src="assets/img/LMR.png" class="img-fluid" />
+                          <a href="https://marel20.github.io/LMRCustomsWeb/" target="_blank">
                             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                           </a>
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title">Lista de Compras</h5>
+                          <h5 class="card-title">Proyecto LMR Customs SRL</h5>
                         </div>
                       </div>
                     </div>
                   </div>
                   
-                <div class="verMas">
+                <div class="verMas" 
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                >
                     <a href="https://github.com/marel20?tab=repositories" target="_blank">
                     <h3>Ver mas proyectos ></h3>
                     </a>
@@ -326,17 +365,22 @@
 
       <!-----Start Footer----->
 
-        <footer id="contact" class="footer" style="background-color: #f1f1f1;">
-          <h5>Contáctame y trabajemos juntos</h5>
+        <footer id="contact" class="footer" style="background-color: #f1f1f1;"
+        data-aos="flip-up"
+        data-aos-duration="3000"
+        >
+          <h5 data-aos="fade-right"
+          data-aos-duration="3000">Contáctame y trabajemos juntos</h5>
             <!-- Grid container -->
-            <div class="socialMedia">
+            <div class="socialMedia visible">
               <!-- Section: Social media -->
                 <!-- Github -->
-                <div id="github" class="visible">
+                <div id="github" class="visible" data-aos="fade-down-left" data-aos-offset="100" data-aos-duration="3000">
                     <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
                         <img src="assets/icons/github.png" alt="git">
                     </a>
                 </div>
+                
                 <div id="git" class="oculto">
                     <a href="https://github.com/marel20?tab=repositories" role="button" target="_blank">
                         <img src="assets/icons/git.png" alt="git">
@@ -345,7 +389,7 @@
                 
           
                 <!-- WhatsApp -->
-                <div id="whatsapp" class="visible">
+                <div id="whatsapp" class="visible" data-aos="fade-down-left" data-aos-offset="100" data-aos-duration="3000">
                     <a href="https://wa.me/5493471416804" role="button" target="_blank">
                         <img src="assets/icons/whatsapp.png" alt="wsp">
                     </a>
@@ -357,7 +401,7 @@
                 </div>
           
                 <!-- Correo -->
-                <div id="correo" class="visible">
+                <div id="correo" class="visible" data-aos="fade-down-right" data-aos-offset="100" data-aos-duration="3000">
                     <a href="mailto:marelli_11@hotmail.com" role="button" target="_blank">
                         <img src="assets/icons/correo.png" alt="correo">
                     </a>
@@ -369,11 +413,12 @@
                 </div>
           
                 <!-- Linkedin -->
-                <div id="linkedin" class="visible">
+                <div id="linkedin" class="visible" data-aos="fade-down-right" data-aos-offset="100" data-aos-duration="3000">
                     <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
                         <img src="assets/icons/linkedin.png" alt="in">
                     </a>
                 </div>
+                
                 <div id="linked" class="oculto">
                     <a href="https://www.linkedin.com/in/daniel-marelli-07/" role="button" target="_blank">
                         <img src="assets/icons/linkedinn.png" alt="in">
@@ -402,5 +447,9 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

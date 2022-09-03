@@ -11,6 +11,7 @@ font-family: 'Voltaire', sans-serif;
 
 html > body{
     background-color: wheat;
+    overflow-x: hidden;
 }
 
 /*------Navbar------*/
@@ -428,7 +429,7 @@ section > h3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     padding: 1%;
 }
 #contact > h5{

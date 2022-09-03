@@ -107,3 +107,18 @@ window.onscroll = function() {
         document.getElementById('up').style.display = 'none';
     }
 }
+
+/*
+$('#cards').on('mouseover', flip);
+$('#cards').on('mouseover', flipOut);
+
+function flip() {
+    var card = document.getElementById('cards');
+    card.dataset.aos = "flip-up";
+    card.dataset.aos.duration = "3000"
+}
+
+function flipOut() {
+    var card = document.getElementById('cards');
+    card.dataset.aos = "flip-up";
+}*/
