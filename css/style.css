@@ -10,7 +10,7 @@ font-family: 'Voltaire', sans-serif;
 * { margin: 0; padding: 0;}
 
 html > body{
-    background-color: wheat;
+    background: linear-gradient(45deg, #E5A663, #FAEE9E);
     overflow-x: hidden;
 }
 
@@ -34,6 +34,10 @@ html > body{
     .oculto{
       display: block;
       visibility: visible;
+    }
+    html > body{
+      background: linear-gradient(to bottom, #FAEE9E, #E5A663);
+      overflow-x: hidden;
     }
     header > nav > .navbar {
         display: none;
@@ -351,6 +355,21 @@ nav {
 .card-title{
     font-family: 'Voltaire', sans-serif;
 }
+
+.animated {
+  animation: hello-goodbye 1.8s infinite;
+  width: fit-content;
+}
+@keyframes hello-goodbye {
+  0% {
+    transform: translateY(-60px) rotateX(0.7turn);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
 /*-----Projects-----*/
 /*-----About-----*/
 .card{
@@ -438,4 +457,11 @@ section > h3{
     color: rgb(0, 0, 0);
     padding: 1%;
     margin: 1% 7.5%;
+}
+
+.flip {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
 }

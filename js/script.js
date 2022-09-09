@@ -108,17 +108,14 @@ window.onscroll = function() {
     }
 }
 
-/*
-$('#cards').on('mouseover', flip);
-$('#cards').on('mouseover', flipOut);
+
+$('.card').on('mouseenter', flip);
+$('.card').on('mouseout', flipOut);
 
 function flip() {
-    var card = document.getElementById('cards');
-    card.dataset.aos = "flip-up";
-    card.dataset.aos.duration = "3000"
+    $('.card').addClass('animated');
 }
 
 function flipOut() {
-    var card = document.getElementById('cards');
-    card.dataset.aos = "flip-up";
-}*/
+    $('.card').removeClass('animated');
+}
